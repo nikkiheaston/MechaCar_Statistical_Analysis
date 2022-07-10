@@ -1,9 +1,8 @@
-# MechaCar_Statistical_Analysis
-
+# MechaCar Statistical Analysis
 
 ## Linear Regression to Predict MPG
 Below is a screenshot of the output of the linear regression model to predict MPG:
-![Linear Regression to Predict MPG]()
+![Linear Regression to Predict MPG](https://github.com/nikkiheaston/MechaCar_Statistical_Analysis/blob/main/Linear_Regression_Predict_MPG.PNG)
 
 Vehicle length and ground clearance are the only variables whose p-value is less than .05. Therefore, they provide a non-random amount of variance to the mpg values in the dataset.
 
@@ -13,22 +12,29 @@ The r-squared value is .7149 which means that roughtly 71% of the variability in
 
 ## Summary Statistics on Suspension Coils
 
-![total_summary_df_pic]()
+![total_summary_df_pic](https://github.com/nikkiheaston/MechaCar_Statistical_Analysis/blob/main/total_summary_df.PNG)
 
 For all manufacturing lots, the variance in PSI is approximately 62 which is below the limit of 100 PSI. Therefore all lots are meeting the design specifications. 
 
-![lot_summary_df_pic]()
+![lot_summary_df_pic](https://github.com/nikkiheaston/MechaCar_Statistical_Analysis/blob/main/lot_summary_df.PNG)
+
 Lots 1 and 2 are well below the limit of 100 PSI variance and therefore are meeting design specifications. However, Lot 3 has a variance of 170 PSI, which means it is not within the design specifications. 
 
 ## T-Tests on Suspension Coils
 In performing t-tests on the lot summary, as well as by looking at each individual lot, I discovered the following:
 
-![lot_summary]()
+![lot_summary](https://github.com/nikkiheaston/MechaCar_Statistical_Analysis/blob/main/t_test_lot_summary.PNG)
+
 The calcualted p-value is .4533 which is well above the .05 siginficance level. Therefore, I fail to reject the null hypothesis that the lot mean is not statistically different from the population mean.
 
 For each individual lot:
-![lot1_t-test]()
-For Lot 1  and Lot 2 the p-value equals exactly 1 and .6072 respectively. In this case, I fail to reject the null hypothesis that the lot means are statistically different from the population mean.
+
+![lot1_t-test](https://github.com/nikkiheaston/MechaCar_Statistical_Analysis/blob/main/t_test_lot1_summary.PNG)
+![lot2_t_test](https://github.com/nikkiheaston/MechaCar_Statistical_Analysis/blob/main/t_test_lot2_summary.PNG)
+
+In Lot 1 and Lot 2 the p-value equals exactly 1 and .6072 respectively. In this case, I fail to reject the null hypothesis that the lot means are statistically different from the population mean.
+
+![lot3_t_test](https://github.com/nikkiheaston/MechaCar_Statistical_Analysis/blob/main/t_test_lot3_summary.PNG)
 
 But for Lot 3, the p-value is .04 which is below the significance level of .05. In this case, I would reject the null hypothesis and state that the mean of the PSI for Lot 3 is statistically different from the population mean PSI.
 
